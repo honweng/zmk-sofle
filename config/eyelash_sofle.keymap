@@ -1,5 +1,14 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 35    // 10
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYER) \
+  combo_##NAME { \
+    timeout-ms = <50>; \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYER>; \
+  };
+
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
@@ -41,12 +50,10 @@
 / {
     combos {
         compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 13>;
-            bindings = <&kp ESC>;
-            layers = <0>;
-        };
+
+        COMBO(esc, &kp ESC, 0 13, 0)
+        COMBO(printscreen, &kp PSCRN, 12 25, 1)
+
     };
 };
 
@@ -64,7 +71,7 @@
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp LSHFT>, <&kp CAPS>;
+            bindings = <&kp LSHFT>, <&kp LSHFT>, <&kp CAPS>;
         };
     };
 
@@ -86,11 +93,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F6     &kp F7    &kp F8      &kp F9     &kp F10           &kp PSCRN
-&trans      &kp GRAVE  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4  &mmv MOVE_DOWN   &kp PG_UP  &kp HOME  &kp UP      &kp END    &kp MINUS         &kp EQUAL
-&trans      &kp TILDE  &trans     &trans     &trans     &mkp MB5  &mmv MOVE_LEFT   &kp PG_DN  &kp LEFT  &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &trans     &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans     &trans    &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans     &trans     &trans     &trans     &trans    &mkp LCLK        &trans     &trans    &trans      &trans     &trans
+&kp ESC     &kp F1     &kp F2     &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F6      &kp F7    &kp F8     &kp F9   &kp F10           &trans
+&trans      &kp GRAVE  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4  &mmv MOVE_DOWN   &kp INSERT  &kp HOME  &kp PG_UP  &trans   &kp MINUS         &kp EQUAL
+&trans      &kp TILDE  &trans     &trans     &trans     &mkp MB5  &mmv MOVE_LEFT   &kp DELETE  &kp END   &kp PG_DN  &trans   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans      &trans     &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans      &trans    &trans     &kp F11  &kp F12           &trans
+&kp C_MUTE  &trans     &trans     &trans     &trans     &trans    &mkp LCLK        &trans      &trans    &trans     &trans   &trans
             >;
 
             display-name = "layer1";
@@ -99,11 +106,11 @@
 
         layer_2 {
             bindings = <
-&kp TILDE  &trans  &trans  &trans  &trans  &trans    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8   &kp F9   &kp F10    &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &kp F11  &kp F12  &kp UNDER  &kp PLUS
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans   &trans   &kp LBRC   &kp RBRC
-&trans     &trans  &trans  &trans  &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans   &trans   &trans     &trans
-&trans     &trans  &trans  &trans  &trans  &trans    &mkp LCLK        &trans  &trans  &trans   &trans   &trans
+&kp TILDE  &trans    &trans    &trans     &trans  &trans    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8   &kp F9   &kp F10    &trans
+&trans     &trans    &kp UP    &trans     &trans  &trans    &mmv MOVE_DOWN   &trans  &trans  &kp F11  &kp F12  &kp UNDER  &kp PLUS
+&trans     &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans    &mmv MOVE_LEFT   &trans  &trans  &trans   &trans   &kp LBRC   &kp RBRC
+&trans     &trans    &trans    &trans     &trans  &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans   &trans   &trans     &trans
+&trans     &trans    &trans    &trans     &trans  &trans    &mkp LCLK        &trans  &trans  &trans   &trans   &trans
             >;
 
             display-name = "layer2";
