@@ -254,6 +254,11 @@ parse_config:
       tap: $$mdi:backup-restore$$
     "&bootloader":
       tap: $$mdi:progress-download$$
+    # Shift, Shift, Caps Tap
+    "&shiftcap":
+      tap: $$mdi:apple-keyboard-shift$$
+      shifted: $$mdi:apple-keyboard-shift$$
+      hold: $$mdi:apple-keyboard-caps$$
 
   # ZMK
   zmk_keycode_map:
