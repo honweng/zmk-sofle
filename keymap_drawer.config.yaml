@@ -259,6 +259,10 @@ parse_config:
       tap: $$mdi:apple-keyboard-shift$$
       shifted: $$mdi:apple-keyboard-shift$$
       hold: $$mdi:apple-keyboard-caps$$
+    "&l_tp":
+      tap: "LAYER1"
+      shifted: "LAYER2"
+      hold: "LAYER3"
 
   # ZMK
   zmk_keycode_map:
