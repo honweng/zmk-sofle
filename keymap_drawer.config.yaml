@@ -437,6 +437,7 @@ parse_config:
        shifted: ''
     # "Meh" key
     LS(LC(LALT)): $$mdi:star-three-points$$
+    LC(LA(DEL)): $$mdi:star-three-points$$
 
     # Arrows
     UP: $$mdi:arrow-up-bold$$
@@ -569,3 +570,6 @@ parse_config:
       key:
         shifted: ":"
         hold: ";"
+    combo_ctrl_alt_del:
+      key:
+        hold: $$mdi:lock-open-plus-outline$$
