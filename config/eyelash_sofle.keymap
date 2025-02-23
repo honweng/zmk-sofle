@@ -99,6 +99,18 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+
+        // Home Row Mod for ALT keys
+        // where it is not used in typing combo
+        // but more to launch a specific command
+        thm: tap_preferred_homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;   
+            quick-tap-ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     keymap {
@@ -106,11 +118,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1        &kp N2       &kp N3        &kp N4        &kp N5     &kp UP_ARROW     &kp N6     &kp N7        &kp N8        &kp N9       &kp N0    &kp BACKSPACE
-&kp TAB     &kp Q         &kp W        &kp E         &kp R         &kp T      &kp DOWN_ARROW   &kp Y      &kp U         &kp I         &kp O        &kp P     &kp BSLH
-&shiftcap   &kp A         &bhm LALT S  &bhm LSHFT D  &bhm LCTRL F  &kp G      &kp LEFT_ARROW   &kp H      &bhm RCTRL J  &bhm RSHFT K  &bhm RALT L  &kp SEMI  &kp APOS
-&kp LCTRL   &kp Z         &kp X        &kp C         &kp V         &kp B      &kp RIGHT_ARROW  &kp N      &kp M         &kp COMMA     &kp DOT      &kp FSLH  &kp ENTER
-&kp C_MUTE  &kp LEFT_GUI  &kp LALT     &kp DEL       &lt 1 MINUS   &kp SPACE  &kp ENTER        &kp SPACE  &kp ENTER     &lt 2 EQUAL   &lt 3 LBKT   &kp RBKT  
+&kp ESC     &kp N1       &kp N2       &kp N3        &kp N4        &kp N5     &kp UP_ARROW     &kp N6     &kp N7        &kp N8        &kp N9       &kp N0          &kp BACKSPACE
+&kp TAB     &kp Q        &kp W        &kp E         &kp R         &kp T      &kp DOWN_ARROW   &kp Y      &kp U         &kp I         &kp O        &kp P           &kp BSLH
+&shiftcap   &thm LGUI A  &thm LALT S  &bhm LSHFT D  &bhm LCTRL F  &kp G      &kp LEFT_ARROW   &kp H      &bhm RCTRL J  &bhm RSHFT K  &thm RALT L  &thm RGUI SEMI  &kp APOS
+&kp LCTRL   &kp Z        &kp X        &kp C         &kp V         &kp B      &kp RIGHT_ARROW  &kp N      &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp ENTER
+&kp C_MUTE  &kp LGUI     &kp LALT     &kp DEL       &lt 1 MINUS   &kp SPACE  &kp ENTER        &kp SPACE  &kp ENTER     &lt 2 EQUAL   &lt 3 LBKT   &kp RBKT  
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
