@@ -72,13 +72,6 @@
         tap-ms = <30>;
     };
 
-    scroll_rgb_encoder: scroll_navi_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-        tap-ms = <30>;
-    };
-
     behaviors {
         // Hold: LSHFT
         // CAPS is activated by tapping shift key trice
@@ -172,7 +165,7 @@
             >;
 
             display-name = "LAYER3";
-            sensor-bindings = <&scroll_rgb_encoder>;
+            sensor-bindings = <&scroll_encoder>;
         };
     };
 };
