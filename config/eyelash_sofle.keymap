@@ -72,6 +72,13 @@
         tap-ms = <30>;
     };
 
+    scroll_rgb_encoder: scroll_navi_encoder {
+        compatible = "zmk,behavior-sensor-rotate";
+        #sensor-binding-cells = <0>;
+        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
+        tap-ms = <30>;
+    };
+
     behaviors {
         // Hold: LSHFT
         // CAPS is activated by tapping shift key trice
@@ -120,7 +127,7 @@
             bindings = <
 &kp ESC     &kp N1       &kp N2       &kp N3        &kp N4        &kp N5     &kp UP_ARROW     &kp N6     &kp N7        &kp N8        &kp N9       &kp N0          &kp BACKSPACE
 &kp TAB     &kp Q        &kp W        &kp E         &kp R         &kp T      &kp DOWN_ARROW   &kp Y      &kp U         &kp I         &kp O        &kp P           &kp BSLH
-&shiftcap   &thm LGUI A  &thm LALT S  &bhm LSHFT D  &bhm LCTRL F  &kp G      &kp LEFT_ARROW   &kp H      &bhm RCTRL J  &bhm RSHFT K  &thm RALT L  &thm RGUI SEMI  &kp APOS
+&shiftcap   &thm LGUI A  &thm LALT S  &thm LSHFT D  &thm LCTRL F  &kp G      &kp LEFT_ARROW   &kp H      &thm RCTRL J  &thm RSHFT K  &thm RALT L  &thm RGUI SEMI  &kp APOS
 &kp LCTRL   &kp Z        &kp X        &kp C         &kp V         &kp B      &kp RIGHT_ARROW  &kp N      &kp M         &kp COMMA     &kp DOT      &kp FSLH        &kp ENTER
 &kp C_MUTE  &kp LGUI     &kp LALT     &kp DEL       &lt 1 MINUS   &kp SPACE  &kp ENTER        &kp SPACE  &kp ENTER     &lt 2 EQUAL   &lt 3 LBKT   &kp RBKT  
             >;
@@ -165,7 +172,7 @@
             >;
 
             display-name = "LAYER3";
-            sensor-bindings = <&scroll_encoder>;
+            sensor-bindings = <&scroll_rgb_encoder>;
         };
     };
 };
