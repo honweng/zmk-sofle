@@ -255,9 +255,8 @@ parse_config:
     "&bootloader":
       tap: $$mdi:progress-download$$
     # Shift, Shift, Caps Tap
-    "&shiftcap":
+    "&u_sc":
       tap: $$mdi:apple-keyboard-shift$$
-      shifted: $$mdi:apple-keyboard-shift$$
       hold: $$mdi:apple-keyboard-caps$$
     "&l_tp":
       tap: "LAYER1"
