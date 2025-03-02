@@ -26,15 +26,16 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1        &kp N2        &kp N3         &kp N4         &kp N5     &kp UP_ARROW     &kp N6     &kp N7         &kp N8         &kp N9        &kp N0           &kp BACKSPACE
-&kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T      &kp DOWN_ARROW   &kp Y      &kp U          &kp I          &kp O         &kp P            &kp BSLH
-&u_sc       &u_mt LGUI A  &u_mt LALT S  &u_mt LSHFT D  &u_mt LCTRL F  &kp G      &kp LEFT_ARROW   &kp H      &u_mt RCTRL J  &u_mt RSHFT K  &u_mt RALT L  &u_mt RGUI SEMI  &kp APOS
-&kp LCTRL   &kp Z         &kp X         &kp C          &kp V          &kp B      &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp ENTER
-&kp C_MUTE  &kp LGUI      &kp LALT      &kp DEL        &u_lt 1 MINUS  &kp SPACE  &kp ENTER        &kp SPACE  &kp ENTER      &u_lt 2 EQUAL  &u_lt 3 LBKT  &kp RBKT  
+&kp ESC     &kp N1        &kp N2        &kp N3         &kp N4         &kp N5         &kp UP_ARROW     &kp N6     &kp N7         &kp N8         &kp N9        &kp N0           &kp BACKSPACE
+&kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T          &kp DOWN_ARROW   &kp Y      &kp U          &kp I          &kp O         &kp P            &kp BSLH
+&u_sc       &u_mt LGUI A  &u_mt LALT S  &u_mt LSHFT D  &u_mt LCTRL F  &kp G          &kp LEFT_ARROW   &kp H      &u_mt RCTRL J  &u_mt RSHFT K  &u_mt RALT L  &u_mt RGUI SEMI  &kp APOS
+&kp LCTRL   &kp Z         &kp X         &kp C          &kp V          &kp B          &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp ENTER
+&kp C_MUTE  &kp LGUI      &kp LALT      &kp DEL        &u_lt 1 MINUS  &u_lt 2 SPACE  &kp ENTER        &kp SPACE  &kp ENTER      &u_lt 2 EQUAL  &u_lt 3 LBKT  &kp RBKT  
             >;
 
+            display-name = "BASE";
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
-            display-name = "LAYER0";
+            
         };
 
         layer_1 {
@@ -46,20 +47,20 @@
 &kp CAPS   &trans  &trans  &trans  &trans  &trans  &kp DEL    &trans   &trans    &trans     &trans   &trans
             >;
 
-            display-name = "LAYER1";
+            display-name = "NAVIGATION";
             sensor-bindings = <&scroll_navi_encoder>;
         };
 
         layer_2 {
             bindings = <
-&kp TILDE  &kp F1  &kp F2     &kp F3     &kp F4     &kp F5    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
-&trans     &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4  &mmv MOVE_DOWN   &trans  &trans  &trans  &trans   &trans   &trans
-&trans     &trans  &trans     &trans     &trans     &mkp MB5  &mmv MOVE_LEFT   &trans  &trans  &trans  &trans   &trans   &trans
-&trans     &trans  &trans     &trans     &trans     &trans    &mmv MOVE_RIGHT  &trans  &trans  &trans  &kp F11  &kp F12  &trans
-&trans     &trans  &trans     &trans     &trans     &trans    &mkp LCLK        &trans  &trans  &trans  &trans   &trans
+&kp TILDE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &mmv MOVE_UP     &kp F6     &kp F7     &kp F8     &kp F9    &kp F10  &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN   &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4  &trans   &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT   &trans     &trans     &trans     &mkp MB5  &trans   &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &mmv MOVE_RIGHT  &trans     &trans     &trans     &kp F11   &kp F12  &trans
+&trans     &trans  &trans  &trans  &trans  &trans  &mkp LCLK        &trans     &trans     &trans     &trans    &trans
             >;
 
-            display-name = "LAYER2";
+            display-name = "MOUSE";
             sensor-bindings = <&scroll_encoder>;
         };
 
@@ -72,7 +73,7 @@
 &trans  &trans           &trans          &trans           &trans           &trans           &trans  &trans           &trans           &trans           &trans           &trans
             >;
 
-            display-name = "LAYER3";
+            display-name = "SYS_ADM";
             sensor-bindings = <&scroll_encoder>;
         };
     };
