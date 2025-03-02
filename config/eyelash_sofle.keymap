@@ -30,7 +30,7 @@
 &kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T          &kp DOWN_ARROW   &kp Y      &kp U          &kp I          &kp O         &kp P            &kp BSLH
 &u_sc       &u_mt LGUI A  &u_mt LALT S  &u_mt LSHFT D  &u_mt LCTRL F  &kp G          &kp LEFT_ARROW   &kp H      &u_mt RCTRL J  &u_mt RSHFT K  &u_mt RALT L  &u_mt RGUI SEMI  &kp APOS
 &kp LCTRL   &kp Z         &kp X         &kp C          &kp V          &kp B          &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp ENTER
-&kp C_MUTE  &kp LGUI      &kp LALT      &kp DEL        &u_lt 1 MINUS  &u_lt 2 SPACE  &kp ENTER        &kp SPACE  &kp ENTER      &u_lt 3 EQUAL  &u_lt 4 LBKT  &kp RBKT  
+&kp C_MUTE  &kp LGUI      &kp LALT      &kp DEL        &u_lt 3 MINUS  &u_lt 2 SPACE  &kp ENTER        &kp SPACE  &kp ENTER      &u_lt 1 EQUAL  &u_lt 4 LBKT  &kp RBKT  
             >;
 
             display-name = "BASE";
@@ -40,11 +40,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp PG_UP  &kp F6   &kp F7    &kp F8     &kp F9   &kp F10           &trans
-&trans     &trans  &trans  &trans  &trans  &trans  &kp PG_DN  &kp INS  &kp HOME  &kp PG_UP  &trans   &kp MINUS         &kp EQUAL
-&trans     &trans  &trans  &trans  &trans  &trans  &kp HOME   &kp DEL  &kp END   &kp PG_DN  &trans   &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans     &trans  &trans  &trans  &trans  &trans  &kp END    &trans   &trans    &trans     &kp F11  &kp F12           &trans
-&kp CAPS   &trans  &trans  &trans  &trans  &trans  &kp DEL    &trans   &trans    &trans     &trans   &trans
+&kp GRAVE  &kp F1  &kp F2  &kp F3   &kp F4    &kp F5     &kp PG_UP  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
+&trans     &trans  &trans  &kp INS  &kp HOME  &kp PG_UP  &kp PG_DN  &trans  &trans  &trans  &trans   &trans   &trans
+&trans     &trans  &trans  &kp DEL  &kp END   &kp PG_DN  &kp HOME   &trans  &trans  &trans  &trans   &trans   &trans
+&trans     &trans  &trans  &trans   &trans    &trans     &kp END    &trans  &trans  &trans  &kp F11  &kp F12  &trans
+&kp CAPS   &trans  &trans  &trans   &trans    &trans     &kp DEL    &trans  &trans  &trans  &trans   &trans
             >;
 
             display-name = "NAVI";
@@ -66,11 +66,11 @@
 
         layer_3 {
             bindings = <
-&trans      &trans  &trans  &trans  &trans  &trans  &kp UP_ARROW     &trans  &trans  &trans  &trans   &trans   &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW   &trans  &trans  &trans  &trans   &trans   &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW   &trans  &trans  &trans  &trans   &trans   &trans
-&trans      &trans  &trans  &trans  &trans  &trans  &kp RIGHT_ARROW  &trans  &trans  &trans  &trans   &trans   &trans
-&kp C_MUTE  &trans  &trans  &trans  &trans  &trans  &kp ENTER        &trans  &trans  &trans  &trans   &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &kp UP_ARROW     &trans  &trans     &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW   &trans  &kp KP_N7  &kp KP_N8      &kp KP_N9        &kp KP_PLUS   &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW   &trans  &kp KP_N4  &kp KP_N5      &kp KP_N6        &kp KP_PLUS   &trans
+&trans      &trans  &trans  &trans  &trans  &trans  &kp RIGHT_ARROW  &trans  &kp KP_N1  &kp KP_N2      &kp KP_N3        &kp KP_ENTER  &trans
+&kp C_MUTE  &trans  &trans  &trans  &trans  &trans  &kp ENTER        &trans  &kp KP_N0  &kp KP_DOT     &trans           &trans
             >;
 
             display-name = "NUMPAD";
