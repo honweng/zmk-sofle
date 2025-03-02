@@ -1,13 +1,13 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 1200  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 35    // 10
 
-#define COMBO(NAME, BINDINGS, KEYPOS, LAYER) \
-  combo_##NAME { \
-    timeout-ms = <50>; \
-    bindings = <BINDINGS>; \
-    key-positions = <KEYPOS>; \
-    layers = <LAYER>; \
-  };
+//#define COMBO(NAME, BINDINGS, KEYPOS, LAYER) \
+//  combo_##NAME { \
+//    timeout-ms = <50>; \
+//    bindings = <BINDINGS>; \
+//    key-positions = <KEYPOS>; \
+//    layers = <LAYER>; \
+//  };
 
 #include <input/processors.dtsi>
 #include <behaviors.dtsi>
@@ -17,6 +17,9 @@
 #include <dt-bindings/zmk/pointing.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+
+#include "combo.h"
+#include "combo.dtsi"
 
 / {
   zip_scroll_scaler: zip_scroll_scaler {
@@ -47,14 +50,15 @@
     acceleration-exponent = <1>;
 };
 
-/ {
-    combos {
-        compatible = "zmk,combos";
 
-        COMBO(printscreen, &kp PSCRN, 12 25, 1)
-        COMBO(ctrl_alt_del, &kp LC(LA(DEL)), 0 13, 0)
-    };
-};
+/// {
+//    combos {
+//        compatible = "zmk,combos";
+//
+//        COMBO(printscreen, &kp PSCRN, 12 25, 1)
+//        COMBO(ctrl_alt_del, &kp LC(LA(DEL)), 0 13, 0)
+//    };
+//};
 
 / {
 

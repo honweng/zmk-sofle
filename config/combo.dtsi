@@ -1,0 +1,8 @@
+/ {
+    combos {
+        compatible = "zmk,combos";
+
+        COMBO(printscreen, &kp PSCRN, 12 25, 1)
+        COMBO(ctrl_alt_del, &kp LC(LA(DEL)), 0 13, 0)
+    };
+};
