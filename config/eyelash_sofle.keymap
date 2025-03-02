@@ -40,11 +40,11 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2  &kp F3   &kp F4    &kp F5     &kp PG_UP  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
-&trans     &trans  &trans  &kp INS  &kp HOME  &kp PG_UP  &kp PG_DN  &trans  &trans  &trans  &trans   &trans   &trans
-&trans     &trans  &trans  &kp DEL  &kp END   &kp PG_DN  &kp HOME   &trans  &trans  &trans  &trans   &trans   &trans
-&trans     &trans  &trans  &trans   &trans    &trans     &kp END    &trans  &trans  &trans  &kp F11  &kp F12  &trans
-&kp CAPS   &trans  &trans  &trans   &trans    &trans     &kp DEL    &trans  &trans  &trans  &trans   &trans
+&kp GRAVE  &kp F1  &kp F2     &kp F3   &kp F4    &kp F5     &kp PG_UP  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
+&trans     &trans  &kp PSCRN  &kp INS  &kp HOME  &kp PG_UP  &kp PG_DN  &trans  &trans  &trans  &trans   &trans   &trans
+&trans     &trans  &trans     &kp DEL  &kp END   &kp PG_DN  &kp HOME   &trans  &trans  &trans  &trans   &trans   &trans
+&trans     &trans  &trans     &trans   &trans    &trans     &kp END    &trans  &trans  &trans  &kp F11  &kp F12  &trans
+&kp CAPS   &trans  &trans     &trans   &trans    &trans     &kp DEL    &trans  &trans  &trans  &trans   &trans
             >;
 
             display-name = "NAVI";
