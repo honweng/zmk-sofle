@@ -16,60 +16,20 @@
 #include "behaviour.h"
 #include "behaviour.dtsi"
 
-/ {
-  zip_scroll_scaler: zip_scroll_scaler {
-    compatible = "zmk,input-processor-scaler";
-    #input-processor-cells = <2>;
-    type = <INPUT_EV_REL>;
-    codes = <INPUT_REL_WHEEL INPUT_REL_HWHEEL>;
-    track-remainders;
-  };
-};
-
-&mmv_input_listener {
-       input-processors = <&zip_xy_scaler 2 1>;
-};
-
-&msc_input_listener {
-       input-processors = <&zip_scroll_scaler 2 1>;
-};
-
-&msc {
-    acceleration-exponent = <0>;      // 0
-    time-to-max-speed-ms = <0>;       // 300
-    delay-ms = <0>;                   // 0
-};
-
-&mmv {
-    time-to-max-speed-ms = <400>;
-    acceleration-exponent = <1>;
-};
+#include "mouse.dtsi"
+#include "scroller.dtsi"
 
 / {
-
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-        tap-ms = <30>;
-    };
-
-    scroll_navi_encoder: scroll_navi_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&kp PG_DN>, <&kp PG_UP>;
-        tap-ms = <30>;
-    };
 
     keymap {
         compatible = "zmk,keymap";
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1        &kp N2        &kp N3         &kp N4         &kp N5     &kp UP_ARROW     &kp N6     &kp N7         &kp N8         &kp N9        &kp N0          &kp BACKSPACE
-&kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T      &kp DOWN_ARROW   &kp Y      &kp U          &kp I          &kp O         &kp P           &kp BSLH
+&kp ESC     &kp N1        &kp N2        &kp N3         &kp N4         &kp N5     &kp UP_ARROW     &kp N6     &kp N7         &kp N8         &kp N9        &kp N0           &kp BACKSPACE
+&kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T      &kp DOWN_ARROW   &kp Y      &kp U          &kp I          &kp O         &kp P            &kp BSLH
 &u_sc       &u_mt LGUI A  &u_mt LALT S  &u_mt LSHFT D  &u_mt LCTRL F  &kp G      &kp LEFT_ARROW   &kp H      &u_mt RCTRL J  &u_mt RSHFT K  &u_mt RALT L  &u_mt RGUI SEMI  &kp APOS
-&kp LCTRL   &kp Z         &kp X         &kp C          &kp V          &kp B      &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA      &kp DOT       &kp FSLH        &kp ENTER
+&kp LCTRL   &kp Z         &kp X         &kp C          &kp V          &kp B      &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp ENTER
 &kp C_MUTE  &kp LGUI      &kp LALT      &kp DEL        &u_lt 1 MINUS  &kp SPACE  &kp ENTER        &kp SPACE  &kp ENTER      &u_lt 2 EQUAL  &u_lt 3 LBKT  &kp RBKT  
             >;
 
