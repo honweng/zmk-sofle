@@ -20,7 +20,7 @@
         
         // Hold: LSHFT
         // CAPS is activated by tapping shift key trice
-        shiftcap: shift_shift_or_caps {
+        u_sc: u_sc {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
