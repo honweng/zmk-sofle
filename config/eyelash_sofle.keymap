@@ -70,7 +70,7 @@
 &trans      &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW   &trans  &kp KP_N7  &kp KP_N8      &kp KP_N9        &kp KP_PLUS   &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &kp LEFT_ARROW   &trans  &kp KP_N4  &kp KP_N5      &kp KP_N6        &kp KP_PLUS   &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &kp RIGHT_ARROW  &trans  &kp KP_N1  &kp KP_N2      &kp KP_N3        &kp KP_ENTER  &trans
-&kp C_MUTE  &trans  &trans  &trans  &trans  &trans  &kp ENTER        &trans  &kp KP_N0  &kp KP_DOT     &trans           &trans
+&kp C_MUTE  &trans  &trans  &trans  &trans  &trans  &kp ENTER        &trans  &trans     &kp KP_N0      &kp KP_DOT       &trans        
             >;
 
             display-name = "NUMPAD";
@@ -87,6 +87,19 @@
             >;
 
             display-name = "SYS_ADM";
+            sensor-bindings = <&scroll_encoder>;
+        };
+
+        layer_5 {
+            bindings = <
+&trans  &trans        &trans        &trans         &trans         &trans     &trans  &trans     &trans         &trans         &trans        &trans        &trans
+&trans  &kp Q         &kp W         &kp F          &kp P          &kp B      &trans  &kp J      &kp L          &kp U          &kp Y         &kp SEMI      &trans
+&trans  &u_mt LGUI A  &u_mt LALT R  &u_mt LSHFT S  &u_mt LCTRL T  &kp G      &trans  &kp M      &u_mt RCTRL N  &u_mt RSHFT E  &u_mt RALT I  &u_mt RGUI O  &trans
+&trans  &kp Z         &kp X         &kp C          &kp D          &kp V      &trans  &kp K      &kp H          &kp COMMA      &kp DOT       &kp SLASH     &trans
+&trans  &trans        &trans        &trans         &trans         &kp SPACE  &trans  &kp SPACE  &trans         &trans         &trans        &trans
+            >;
+
+            display-name = "COLEMAK";
             sensor-bindings = <&scroll_encoder>;
         };
     };
