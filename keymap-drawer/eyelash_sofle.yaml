@@ -354,13 +354,13 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - A
   - R
-  - S
-  - T
+  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - M
-  - N
-  - E
+  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
   - I
   - O
   - {t: '$$mdi:transfer$$', type: trans}
