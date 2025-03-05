@@ -4,7 +4,12 @@
 
         COMBO(printscreen, &kp PSCRN, 0 13, 1)
         COMBO(ctrl_alt_del, &kp LC(LA(DEL)), 0 13, 0)
+        // enable ctrl alt del for colemak dh
+        COMBO(ctrl_alt_del, &kp LC(LA(DEL)), 0 13, 0)
+
+        // layer toggle between qwerty and colemak dh
         COMBO(toggle_layer_5, &to 5, 57 59, 0)
         COMBO(toggle_layer_0, &to 0, 57 59, 5)
+        
     };
 };

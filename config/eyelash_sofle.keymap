@@ -1,4 +1,4 @@
-#define ZMK_POINTING_DEFAULT_MOVE_VAL 800  // 600
+#define ZMK_POINTING_DEFAULT_MOVE_VAL 600  // 600
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 35    // 10
 
 #include <input/processors.dtsi>
@@ -94,7 +94,7 @@
             bindings = <
 &trans  &trans        &trans        &trans         &trans         &trans     &trans  &trans     &trans         &trans         &trans        &trans        &trans
 &trans  &kp Q         &kp W         &kp F          &kp P          &kp B      &trans  &kp J      &kp L          &kp U          &kp Y         &kp SEMI      &trans
-&trans  &u_mt LGUI A  &u_mt LALT R  &u_mt LSHFT S  &u_mt LCTRL T  &kp G      &trans  &kp M      &u_mt RCTRL N  &u_mt RSHFT E  &u_mt RALT I  &u_mt RGUI O  &trans
+&trans  &kp A         &kp R         &kp S          &kp T          &kp G      &trans  &kp M      &kp N          &kp E          &kp I         &kp O         &trans
 &trans  &kp Z         &kp X         &kp C          &kp D          &kp V      &trans  &kp K      &kp H          &kp COMMA      &kp DOT       &kp SLASH     &trans
 &trans  &trans        &trans        &trans         &trans         &kp SPACE  &trans  &kp SPACE  &trans         &trans         &trans        &trans
             >;
