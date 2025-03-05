@@ -352,17 +352,17 @@ layers:
   - {t: ;, s: ':'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: R, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: T, h: '$$mdi:apple-keyboard-control$$'}
+  - A
+  - R
+  - S
+  - T
   - G
   - {t: '$$mdi:transfer$$', type: trans}
   - M
-  - {t: N, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: E, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: I, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: O, h: '$$mdi:apple-keyboard-command$$'}
+  - N
+  - E
+  - I
+  - O
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Z
@@ -394,8 +394,11 @@ combos:
   k: $$mdi:printer-outline$$
   l: [NAVI]
 - p: [0, 13]
-  k: {h: '$$mdi:lock-open-plus-outline$$'}
+  k: $$mdi:star-three-points$$
   l: [BASE]
+- p: [0, 13]
+  k: $$mdi:star-three-points$$
+  l: [COLEMAK]
 - p: [57, 59]
   k: {t: COLEMAK, h: toggle}
   l: [BASE]
