@@ -57,7 +57,7 @@
 &trans      &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN   &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4  &trans   &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &mmv MOVE_LEFT   &trans     &trans     &trans     &mkp MB5  &trans   &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &mmv MOVE_RIGHT  &trans     &trans     &trans     &kp F11   &kp F12  &trans
-&kp C_MUTE  &trans  &trans  &trans  &trans  &trans  &mkp LCLK        &trans     &trans     &trans     &trans    &trans
+&kp C_MUTE  &trans  &trans  &trans  &trans  &trans  &mkp LCLK        &mkp LCLK  &mkp RCLK  &trans     &trans    &trans
             >;
 
             display-name = "MOUSE";
