@@ -4,9 +4,9 @@
 
 #define L_KEYS 0 1 2 3 4 5 13 14 15 16 17 18 26 27 28 29 30 31 39 40 41 42 43 44
 #define R_KEYS 7 8 9 10 11 12 20 21 22 23 24 25 33 34 35 36 37 38 46 47 48 49 50 51
-#define J_KEYS 6 19 32 45
-#define TL_KEYS 56
-#define TR_KEYS 61 62 63
+#define J_KEYS 6 19 32 45 58
+#define TL_KEYS 52 53 54 55 56 57
+#define TR_KEYS 59 60 61 62 63
 
 / {
     behaviors {
@@ -29,8 +29,8 @@
             quick-tap-ms = <175>;                // repeat on tap-into-hold
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
 
-            hold-trigger-key-positions = <R_KEYS>;
-            //hold-trigger-on-release;
+            hold-trigger-key-positions = <R_KEYS J_KEYS TR_KEYS>;
+            hold-trigger-on-release;
         };
 
         hm_r: homerow_mods_right {
@@ -43,8 +43,34 @@
             quick-tap-ms = <175>;
             require-prior-idle-ms = <HM_PRIOR_IDLE>;
 
-            hold-trigger-key-positions = <L_KEYS>;
-            //hold-trigger-on-release;
+            hold-trigger-key-positions = <L_KEYS J_KEYS TL_KEYS>;
+            hold-trigger-on-release;
+        };
+
+        hm_sl: homerow_mods_shift_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>,  <&kp>;
+
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick-tap-ms = <175>;                // repeat on tap-into-hold
+            require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+            hold-trigger-key-positions = <R_KEYS J_KEYS TR_KEYS>;
+        };
+
+        hm_sr: homerow_mods_shift_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            bindings = <&kp>, <&kp>;
+
+            flavor = "balanced";
+            tapping-term-ms = <HM_TAPPING_TERM>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <HM_PRIOR_IDLE>;
+
+            hold-trigger-key-positions = <L_KEYS J_KEYS TL_KEYS>;
         };
 
         u_lt: u_lt {

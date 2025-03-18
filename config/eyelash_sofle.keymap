@@ -26,11 +26,11 @@
 
         layer0 {
             bindings = <
-&kp ESC     &kp N1        &kp N2        &kp N3         &kp N4         &kp N5         &kp UP_ARROW     &kp N6     &kp N7         &kp N8         &kp N9        &kp N0           &kp BACKSPACE
-&kp TAB     &kp Q         &kp W         &kp E          &kp R          &kp T          &kp DOWN_ARROW   &kp Y      &kp U          &kp I          &kp O         &kp P            &kp BSLH
-&u_sc       &kp A         &kp S         &u_mt LSHFT D  &u_mt LCTRL F  &kp G          &kp LEFT_ARROW   &kp H      &u_mt RCTRL J  &u_mt RSHFT K  &kp L         &kp SEMI         &kp APOS
-&kp LCTRL   &kp Z         &kp X         &kp C          &kp V          &kp B          &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA      &kp DOT       &kp FSLH         &kp ENTER
-&kp C_MUTE  &kp LGUI      &kp LALT      &kp DEL        &u_lt 3 MINUS  &u_lt 2 SPACE  &kp ENTER        &kp SPACE  &kp ENTER      &u_lt 1 EQUAL  &u_lt 4 LBKT  &kp RBKT  
+&kp ESC     &kp N1        &kp N2        &kp N3          &kp N4         &kp N5         &kp UP_ARROW     &kp N6     &kp N7         &kp N8          &kp N9        &kp N0           &kp BACKSPACE
+&kp TAB     &kp Q         &kp W         &kp E           &kp R          &kp T          &kp DOWN_ARROW   &kp Y      &kp U          &kp I           &kp O         &kp P            &kp BSLH
+&u_sc       &kp A         &kp S         &hm_sl LSHFT D  &hm_l LCTRL F  &kp G          &kp LEFT_ARROW   &kp H      &hm_r RCTRL J  &hm_sr RSHFT K  &kp L         &kp SEMI         &kp APOS
+&kp LCTRL   &kp Z         &kp X         &kp C           &kp V          &kp B          &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA       &kp DOT       &kp FSLH         &kp ENTER
+&kp C_MUTE  &kp LGUI      &kp LALT      &kp DEL         &u_lt 3 MINUS  &u_lt 2 SPACE  &kp ENTER        &kp SPACE  &kp ENTER      &u_lt 1 EQUAL   &u_lt 4 LBKT  &kp RBKT  
             >;
 
             display-name = "BASE";
@@ -92,11 +92,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans        &trans        &trans         &trans         &trans         &trans  &trans     &trans         &trans         &trans        &trans        &trans
-&trans  &kp Q         &kp W         &kp F          &kp P          &kp B          &trans  &kp J      &kp L          &kp U          &kp Y         &kp SEMI      &trans
-&trans  &kp A         &kp R         &hm_l LSHFT S  &hm_l LCTRL T  &kp G          &trans  &kp M      &hm_r RCTRL N  &hm_r RSHFT E  &kp I         &kp O         &trans
-&trans  &kp Z         &kp X         &kp C          &kp D          &kp V          &trans  &kp K      &kp H          &kp COMMA      &kp DOT       &kp SLASH     &trans
-&trans  &trans        &trans        &trans         &u_lt 3 MINUS  &u_lt 2 SPACE  &trans  &kp SPACE  &trans         &u_lt 1 EQUAL  &u_lt 4 LBKT  &trans
+&trans  &trans        &trans        &trans          &trans         &trans         &trans  &trans     &trans         &trans          &trans        &trans        &trans
+&trans  &kp Q         &kp W         &kp F           &kp P          &kp B          &trans  &kp J      &kp L          &kp U           &kp Y         &kp SEMI      &trans
+&trans  &kp A         &kp R         &hm_sl LSHFT S  &hm_l LCTRL T  &kp G          &trans  &kp M      &hm_r RCTRL N  &hm_sr RSHFT E  &kp I         &kp O         &trans
+&trans  &kp Z         &kp X         &kp C           &kp D          &kp V          &trans  &kp K      &kp H          &kp COMMA       &kp DOT       &kp SLASH     &trans
+&trans  &trans        &trans        &trans          &u_lt 3 MINUS  &u_lt 2 SPACE  &trans  &kp SPACE  &trans         &u_lt 1 EQUAL   &u_lt 4 LBKT  &trans
             >;
  
             display-name = "COLEMAK";
