@@ -92,11 +92,11 @@
 
         layer_5 {
             bindings = <
-&trans  &trans        &trans        &trans          &trans          &trans         &trans  &trans     &trans         &trans         &trans        &trans        &trans
-&trans  &kp Q         &kp W         &kp F           &kp P           &kp B          &trans  &kp J      &kp L          &kp U          &kp Y         &kp SEMI      &trans
-&trans  &kp A         &kp R         &u_mtl LSHFT S  &u_mtl LCTRL T  &kp G          &trans  &kp M      &u_mt RCTRL N  &u_mt RSHFT E  &kp I         &kp O         &trans
-&trans  &kp Z         &kp X         &kp C           &kp D           &kp V          &trans  &kp K      &kp H          &kp COMMA      &kp DOT       &kp SLASH     &trans
-&trans  &trans        &trans        &trans          &u_lt 3 MINUS   &u_lt 2 SPACE  &trans  &kp SPACE  &trans         &u_lt 1 EQUAL  &u_lt 4 LBKT  &trans
+&trans  &trans        &trans        &trans         &trans         &trans         &trans  &trans     &trans         &trans         &trans        &trans        &trans
+&trans  &kp Q         &kp W         &kp F          &kp P          &kp B          &trans  &kp J      &kp L          &kp U          &kp Y         &kp SEMI      &trans
+&trans  &kp A         &kp R         &hm_l LSHFT S  &hm_l LCTRL T  &kp G          &trans  &kp M      &hm_r RCTRL N  &hm_r RSHFT E  &kp I         &kp O         &trans
+&trans  &kp Z         &kp X         &kp C          &kp D          &kp V          &trans  &kp K      &kp H          &kp COMMA      &kp DOT       &kp SLASH     &trans
+&trans  &trans        &trans        &trans         &u_lt 3 MINUS  &u_lt 2 SPACE  &trans  &kp SPACE  &trans         &u_lt 1 EQUAL  &u_lt 4 LBKT  &trans
             >;
  
             display-name = "COLEMAK";
