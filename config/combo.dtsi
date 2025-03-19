@@ -2,10 +2,13 @@
     combos {
         compatible = "zmk,combos";
 
-        COMBO(printscreen, &kp PSCRN, 0 13, 1)
+        //COMBO(printscreen, &kp PSCRN, 0 13, 1)
         COMBO(ctrl_alt_del_0, &kp LC(LA(DEL)), 0 13, 0)
         // enable ctrl alt del for colemak dh
         COMBO(ctrl_alt_del_5, &kp LC(LA(DEL)), 0 13, 5)
+
+        COMBO(grave, &kp GRAVE, 13 14, 0)
+        COMBO(printscreen, &kp PSCRN, 12 25, 0)
 
         // layer toggle between qwerty and colemak dh
         COMBO(toggle_layer_5, &tog 5, 57 59, 0)
