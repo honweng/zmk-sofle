@@ -14,7 +14,7 @@ layers:
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '`', h: '~', s: '~'}
+  - $$mdi:keyboard-tab$$
   - Q
   - W
   - E
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, h: '|', s: '|'}
+  - {t: \, s: '|'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-caps$$'}
   - A
   - S
@@ -38,8 +38,8 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - L
-  - {t: ;, h: ':', s: ':'}
-  - {t: '''', h: '"', s: '"'}
+  - {t: ;, s: ':'}
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -49,21 +49,21 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>'}
-  - {t: /, h: '?', s: '?'}
+  - {t: ',', s: <}
+  - .
+  - {t: /, s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:keyboard-tab$$
+  - {t: '`', s: '~'}
   - {t: '$$mdi:backspace-reverse-outline$$', h: NUMPAD}
   - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: NAVI}
   - {t: '$$mdi:keyboard-return$$', h: SYS_ADM}
-  - {t: '-', h: _, s: _}
-  - {t: '=', h: +, s: +}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
   - $$mdi:apple-keyboard-shift$$
   NAVI:
   - {t: '`', s: '~'}
