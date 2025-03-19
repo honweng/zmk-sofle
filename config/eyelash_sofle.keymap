@@ -19,24 +19,19 @@
 
 #include "mouse.dtsi"
 #include "scroller.dtsi"
-// remap
-// - right space to u_lt 1 DONE
-// - right enter to u_lt 4 DONE
-// - switch position of backspace and EQUAL DONE
-// - auto shift for symbols = [ ] , . \ ; ' -
-// - consider where to move the minus symbol
+
 / {
 
     keymap {
         compatible = "zmk,keymap";
 
-        layer0_qwerty {
+        layer_0_qwerty {
             bindings = <
-&kp ESC     &kp N1        &kp N2        &kp N3          &kp N4         &kp N5         &kp UP_ARROW     &kp N6         &kp N7         &kp N8          &kp N9        &kp N0           &kp EQUAL
-&kp GRAVE   &kp Q         &kp W         &kp E           &kp R          &kp T          &kp DOWN_ARROW   &kp Y          &kp U          &kp I           &kp O         &kp P            &kp BSLH
-&u_sc       &kp A         &kp S         &hm_sl LSHFT D  &hm_l LCTRL F  &kp G          &kp LEFT_ARROW   &kp H          &hm_r RCTRL J  &hm_sr RSHFT K  &kp L         &kp SEMI         &kp APOS
-&kp LCTRL   &kp Z         &kp X         &kp C           &kp V          &kp B          &kp RIGHT_ARROW  &kp N          &kp M          &kp COMMA       &kp DOT       &kp FSLH         &kp ENTER
-&kp C_MUTE  &kp LGUI      &kp LALT      &kp TAB         &u_lt 3 DEL    &u_lt 2 SPACE  &kp ENTER        &u_lt 1 SPACE  &u_lt 4 ENTER  &kp BACKSPACE   &kp LBKT      &kp RBKT  
+&kp ESC          &kp N1        &kp N2        &kp N3          &kp N4         &kp N5         &kp UP_ARROW     &kp N6         &kp N7         &kp N8                &kp N9                   &kp N0               &kp BACKSPACE 
+&as TILDE GRAVE  &kp Q         &kp W         &kp E           &kp R          &kp T          &kp DOWN_ARROW   &kp Y          &kp U          &kp I                 &kp O                    &kp P                &as PIPE BACKSLASH
+&u_sc            &kp A         &kp S         &hm_sl LSHFT D  &hm_l LCTRL F  &kp G          &kp LEFT_ARROW   &kp H          &hm_r RCTRL J  &hm_sr RSHFT K        &kp L                    &as COLON SEMICOLON  &as DOUBLE_QUOTES SQT
+&kp LCTRL        &kp Z         &kp X         &kp C           &kp V          &kp B          &kp RIGHT_ARROW  &kp N          &kp M          &as LESS_THAN COMMA   &as GREATER_THAN PERIOD  &as QUESTION SLASH   &kp ENTER
+&kp C_MUTE       &kp LGUI      &kp LALT      &kp TAB         &u_lt 3 DEL    &u_lt 2 SPACE  &kp ENTER        &u_lt 1 SPACE  &u_lt 4 ENTER  &as UNDERSCORE MINUS  &as PLUS EQUAL       &kp RSHFT             
             >;
 
             display-name = "QWERTY";
@@ -44,7 +39,7 @@
             
         };
 
-        layer_1 {
+        layer_1_navi {
             bindings = <
 &kp GRAVE  &kp F1  &kp F2     &kp F3   &kp F4    &kp F5     &kp PG_UP  &kp F6  &kp F7  &kp F8  &kp F9   &kp F10  &trans
 &trans     &trans  &kp PSCRN  &kp INS  &kp HOME  &kp PG_UP  &kp PG_DN  &trans  &trans  &trans  &trans   &trans   &trans
@@ -57,7 +52,7 @@
             sensor-bindings = <&scroll_navi_encoder>;
         };
 
-        layer_2 {
+        layer_2_mouse {
             bindings = <
 &kp TILDE   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &mmv MOVE_UP     &kp F6     &kp F7     &kp F8     &kp F9    &kp F10  &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &mmv MOVE_DOWN   &mkp LCLK  &mkp MCLK  &mkp RCLK  &mkp MB4  &trans   &trans
@@ -70,7 +65,7 @@
             sensor-bindings = <&scroll_encoder>;
         };
 
-        layer_3 {
+        layer_3_numpad {
             bindings = <
 &trans      &trans  &trans  &trans  &trans  &trans  &kp UP_ARROW     &trans  &trans     &kp KP_DIVIDE  &kp KP_MULTIPLY  &kp KP_MINUS  &trans
 &trans      &trans  &trans  &trans  &trans  &trans  &kp DOWN_ARROW   &trans  &kp KP_N7  &kp KP_N8      &kp KP_N9        &kp KP_PLUS   &trans
@@ -102,7 +97,7 @@
 &trans  &kp Q         &kp W         &kp F           &kp P          &kp B          &trans  &kp J      &kp L          &kp U           &kp Y         &kp SEMI      &trans
 &trans  &kp A         &kp R         &hm_sl LSHFT S  &hm_l LCTRL T  &kp G          &trans  &kp M      &hm_r RCTRL N  &hm_sr RSHFT E  &kp I         &kp O         &trans
 &trans  &kp Z         &kp X         &kp C           &kp D          &kp V          &trans  &kp K      &kp H          &kp COMMA       &kp DOT       &kp SLASH     &trans
-&trans  &trans        &trans        &trans          &u_lt 3 MINUS  &u_lt 2 SPACE  &trans  &kp SPACE  &trans         &u_lt 1 EQUAL   &u_lt 4 LBKT  &trans
+&trans  &trans        &trans        &trans          &trans         &trans         &trans  &trans     &trans         &trans          &trans        &trans
             >;
  
             display-name = "COLEMAK";

@@ -13,8 +13,8 @@ layers:
   - {t: '8', s: '*'}
   - {t: '9', s: (}
   - {t: '0', s: )}
-  - {t: '=', s: +}
-  - {t: '`', s: '~'}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '`', h: '~', s: '~'}
   - Q
   - W
   - E
@@ -26,7 +26,7 @@ layers:
   - I
   - O
   - P
-  - {t: \, s: '|'}
+  - {t: \, h: '|', s: '|'}
   - {t: '$$mdi:apple-keyboard-shift$$', h: '$$mdi:apple-keyboard-caps$$'}
   - A
   - S
@@ -38,8 +38,8 @@ layers:
   - {t: J, h: '$$mdi:apple-keyboard-control$$'}
   - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: ;, h: ':', s: ':'}
+  - {t: '''', h: '"', s: '"'}
   - $$mdi:apple-keyboard-control$$
   - Z
   - X
@@ -49,9 +49,9 @@ layers:
   - $$mdi:arrow-right-bold$$
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
-  - {t: /, s: '?'}
+  - {t: ',', h: <, s: <}
+  - {t: ., h: '>'}
+  - {t: /, h: '?', s: '?'}
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - $$mdi:volume-off$$
   - $$mdi:apple-keyboard-command$$
@@ -62,9 +62,9 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '$$mdi:keyboard-space$$', h: NAVI}
   - {t: '$$mdi:keyboard-return$$', h: SYS_ADM}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - {t: '[', s: '{'}
-  - {t: ']', s: '}'}
+  - {t: '-', h: _, s: _}
+  - {t: '=', h: +, s: +}
+  - $$mdi:apple-keyboard-shift$$
   NAVI:
   - {t: '`', s: '~'}
   - F1
@@ -382,30 +382,30 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '-', h: NUMPAD, s: _}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:keyboard-space$$
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '=', h: NAVI, s: +}
-  - {t: '[', h: SYS_ADM, s: '{'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [0, 13]
   k: $$mdi:star-three-points$$
-  l: [QWERTY]
-- p: [0, 13]
-  k: $$mdi:star-three-points$$
-  l: [COLEMAK]
-- p: [13, 14]
-  k: {t: '`', s: '~'}
-  l: [QWERTY]
 - p: [12, 25]
   k: $$mdi:printer-outline$$
-  l: [QWERTY]
 - p: [57, 59]
   k: {t: COLEMAK, h: toggle}
-  l: [QWERTY]
-- p: [57, 59]
-  k: {t: COLEMAK, h: toggle}
-  l: [COLEMAK]
+- p: [16, 17]
+  k: (
+- p: [21, 22]
+  k: )
+- p: [29, 30]
+  k: '{'
+- p: [34, 35]
+  k: '}'
+- p: [42, 43]
+  k: {t: '[', s: '{'}
+- p: [47, 48]
+  k: {t: ']', s: '}'}
