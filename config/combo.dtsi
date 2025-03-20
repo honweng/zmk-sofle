@@ -5,16 +5,16 @@
         COMBO(ctrl_alt_del_0, &kp LC(LA(DEL)), 0 13)
         COMBO(printscreen, &kp PSCRN, 12 25)
         // layer toggle between qwerty and colemak dh
-        COMBO(toggle_layer_5, &tog 5, 57 59)
+        //COMBO(toggle_layer_colemakdh, &tog COLEMAKDH, 57 59)
 
-        COMBO(left_par, &kp LEFT_PARENTHESIS, 16 17)
-        COMBO(right_par, &kp RIGHT_PARENTHESIS, 21 22)
+        //COMBO(left_par, &kp LEFT_PARENTHESIS, 16 17)
+        //COMBO(right_par, &kp RIGHT_PARENTHESIS, 21 22)
 
-        COMBO(left_brace, &kp LEFT_BRACE, 29 30)
-        COMBO(right_brace, &kp RIGHT_BRACE, 34 35)
+        //COMBO(left_brace, &kp LEFT_BRACE, 29 30)
+        //COMBO(right_brace, &kp RIGHT_BRACE, 34 35)
 
-        COMBO(left_bkt, &kp LEFT_BRACKET, 42 43)
-        COMBO(right_bkt, &kp RIGHT_BRACKET, 47 48)
+        //COMBO(left_bkt, &kp LEFT_BRACKET, 42 43)
+        //COMBO(right_bkt, &kp RIGHT_BRACKET, 47 48)
 
         
     };

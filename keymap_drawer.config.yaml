@@ -206,7 +206,8 @@ parse_config:
 
     # Empty
     "&none":
-      tap: $$mdi:minus-circle-outline$$
+      #tap: "$$mdi:minus-circle-outline$$"
+      tap: ""
       type: none
 
     # Whitespace
@@ -262,6 +263,32 @@ parse_config:
       tap: "LAYER1"
       shifted: "LAYER2"
       hold: "LAYER3"
+    "&u_bootloader":
+      tap: $$mdi:progress-download$$
+    "&u_macro_u_bt_sel_0":
+      shifted: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: 1
+    "&u_macro_u_bt_sel_1":
+      shifted: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: 2
+    "&u_macro_u_bt_sel_2":
+      shifted: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: 3
+    "&u_macro_u_bt_sel_3":
+      shifted: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: 4
+    "&u_macro_u_bt_sel_4":
+      shifted: $$mdi:bluetooth-off$$
+      tap: $$mdi:bluetooth-connect$$
+      hold: 5
+    "&u_to_U_BASE": 
+      tap: "BASE"
+    "&u_to_U_EXTRA": 
+      tap: "EXTRA"
 
   # ZMK
   zmk_keycode_map:
@@ -439,6 +466,11 @@ parse_config:
     # "Meh" key
     LS(LC(LALT)): $$mdi:star-three-points$$
     LC(LA(DEL)): $$mdi:star-three-points$$
+    LC(Y): 'REDO'
+    LC(V): 'PASTE'
+    LC(C): 'COPY'
+    LC(X): 'CUT'
+    LC(Z): 'UNDO'
 
     # Arrows
     UP: $$mdi:arrow-up-bold$$
