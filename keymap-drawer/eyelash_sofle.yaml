@@ -58,10 +58,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-tab$$', h: NAVI}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUMBER}
   - {t: '$$mdi:backspace$$', h: FUNC}
   - {t: '-', s: _}
   - {t: '=', s: +}
@@ -123,10 +123,75 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
   - {t: '$$mdi:keyboard-tab$$', h: NAVI}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
   - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-space$$', h: SYMBOL}
-  - {t: '$$mdi:keyboard-return$$', h: NUMBER}
+  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUMBER}
+  - {t: '$$mdi:backspace$$', h: FUNC}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  TAP:
+  - $$mdi:keyboard-esc$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:arrow-up-bold$$
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-down-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-shift$$
+  - A
+  - S
+  - D
+  - F
+  - G
+  - $$mdi:arrow-left-bold$$
+  - H
+  - J
+  - K
+  - L
+  - {t: '''', s: '"'}
+  - {t: ;, s: ':'}
+  - $$mdi:apple-keyboard-control$$
+  - {t: Z, h: BUTTON}
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:arrow-right-bold$$
+  - N
+  - M
+  - {t: ',', s: <}
+  - .
+  - {t: /, h: BUTTON, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:volume-off$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
+  - {t: '$$mdi:keyboard-tab$$', h: NAVI}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUMBER}
   - {t: '$$mdi:backspace$$', h: FUNC}
   - {t: '-', s: _}
   - {t: '=', s: +}
@@ -154,7 +219,7 @@ layers:
   - {type: none}
   - BASE
   - EXTRA
-  - {type: none}
+  - TAP
   - $$mdi:progress-download$$
   - {type: none}
   - {type: none}
@@ -219,7 +284,7 @@ layers:
   - {type: none}
   - BASE
   - EXTRA
-  - {type: none}
+  - TAP
   - $$mdi:progress-download$$
   - {type: none}
   - {type: none}
@@ -284,7 +349,7 @@ layers:
   - {type: none}
   - BASE
   - EXTRA
-  - {type: none}
+  - TAP
   - $$mdi:progress-download$$
   - {type: none}
   - {type: none}
@@ -341,7 +406,7 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:progress-download$$
-  - {type: none}
+  - TAP
   - EXTRA
   - BASE
   - {type: none}
@@ -406,7 +471,7 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:progress-download$$
-  - {type: none}
+  - TAP
   - EXTRA
   - BASE
   - {type: none}
@@ -471,7 +536,7 @@ layers:
   - {type: none}
   - {type: none}
   - $$mdi:progress-download$$
-  - {type: none}
+  - TAP
   - EXTRA
   - BASE
   - {type: none}

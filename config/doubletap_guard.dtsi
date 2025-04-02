@@ -14,4 +14,5 @@ DOUBLE_TAP_GUARD(u_bootloader, &bootloader)
 
 DOUBLE_TAP_GUARD(u_to_U_BASE, &to BASE)
 DOUBLE_TAP_GUARD(u_to_U_EXTRA, &to EXTRA)
+DOUBLE_TAP_GUARD(u_to_U_TAPL, &to TAPL)
 
