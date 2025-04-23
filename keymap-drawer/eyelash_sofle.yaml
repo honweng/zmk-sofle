@@ -1,70 +1,5 @@
 layout: {zmk_keyboard: eyelash_sofle}
 layers:
-  QWERTY:
-  - $$mdi:keyboard-esc$$
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - $$mdi:arrow-up-bold$$
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:keyboard-tab$$
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - $$mdi:arrow-down-bold$$
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: \, s: '|'}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
-  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
-  - G
-  - $$mdi:arrow-left-bold$$
-  - H
-  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '''', h: '$$mdi:apple-keyboard-command$$', s: '"'}
-  - {t: ;, s: ':'}
-  - $$mdi:apple-keyboard-control$$
-  - {t: Z, h: BUTTON}
-  - X
-  - C
-  - V
-  - B
-  - $$mdi:arrow-right-bold$$
-  - N
-  - M
-  - {t: ',', s: <}
-  - .
-  - {t: /, h: BUTTON, s: '?'}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - $$mdi:volume-off$$
-  - $$mdi:apple-keyboard-command$$
-  - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
-  - {t: '$$mdi:keyboard-tab$$', h: NAVI}
-  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
-  - {t: '$$mdi:keyboard-return$$', type: enter}
-  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
-  - {t: '$$mdi:backspace-reverse-outline$$', h: NUMBER}
-  - {t: '$$mdi:backspace$$', h: FUNC}
-  - {t: '-', s: _}
-  - {t: '=', s: +}
   COLEMAK:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -114,6 +49,71 @@ layers:
   - $$mdi:arrow-right-bold$$
   - K
   - H
+  - {t: ',', s: <}
+  - .
+  - {t: /, h: BUTTON, s: '?'}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:volume-off$$
+  - $$mdi:apple-keyboard-command$$
+  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-esc$$', h: MEDIA}
+  - {t: '$$mdi:keyboard-tab$$', h: NAVI}
+  - {t: '$$mdi:keyboard-space$$', h: MOUSE}
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - {t: '$$mdi:keyboard-return$$', h: SYMBOL}
+  - {t: '$$mdi:backspace-reverse-outline$$', h: NUMBER}
+  - {t: '$$mdi:backspace$$', h: FUNC}
+  - {t: '-', s: _}
+  - {t: '=', s: +}
+  QWERTY:
+  - $$mdi:keyboard-esc$$
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - $$mdi:arrow-up-bold$$
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:backspace$$', type: backspace}
+  - $$mdi:keyboard-tab$$
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - $$mdi:arrow-down-bold$$
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: \, s: '|'}
+  - $$mdi:apple-keyboard-shift$$
+  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: S, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: D, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: F, h: '$$mdi:apple-keyboard-control$$'}
+  - G
+  - $$mdi:arrow-left-bold$$
+  - H
+  - {t: J, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: K, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: L, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '''', h: '$$mdi:apple-keyboard-command$$', s: '"'}
+  - {t: ;, s: ':'}
+  - $$mdi:apple-keyboard-control$$
+  - {t: Z, h: BUTTON}
+  - X
+  - C
+  - V
+  - B
+  - $$mdi:arrow-right-bold$$
+  - N
+  - M
   - {t: ',', s: <}
   - .
   - {t: /, h: BUTTON, s: '?'}
