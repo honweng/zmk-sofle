@@ -1,23 +1,23 @@
 #define QWERTY_BINDINGS \
-&kp ESC           &kp N1              &kp N2             &kp N3             &kp N4             &kp N5              &kp UP             &kp N6             &kp N7             &kp N8             &kp N9             &kp N0               &kp BACKSPACE \
-&kp TAB           &kp Q               &kp W              &kp E              &kp R              &kp T               &kp DOWN           &kp Y              &kp U              &kp I              &kp O              &kp P                &kp BACKSLASH \
-&kp LSHFT         U_HML(LGUI, A)      U_HML(LALT, S)     U_HSL(LSHFT, D)    U_HML(LCTRL, F)    &kp G               &kp LEFT           &kp H              U_HMR(RCTRL, J)    U_HSR(RSHFT, K)    U_HMR(RALT, L)     U_HMR(RGUI, SQT)     &kp SEMI \
-&kp LCTRL         U_LT(BUTTON, Z)     &kp X              &kp C              &kp V              &kp B               &kp RIGHT          &kp N              &kp M              &kp COMMA          &kp PERIOD         U_LT(BUTTON, SLASH)  &kp RET \
-&kp C_MUTE        &kp LGUI            &kp LALT           U_LT(MEDIA, ESC)   U_LT(NAVI, TAB)    U_LT(MOUSE, SPACE)  &kp RET            U_LT(SYMB, RET)    U_LT(NUMBER, DEL)  U_LT(FUNC, BSPC)   &kp MINUS          &kp EQUAL   
+&kp ESC           &kp N1              &kp N2             &kp N3             &kp N4             &kp N5              &kp UP             &kp N6             &kp N7              &kp N8             &kp N9             &kp N0               &kp BACKSPACE \
+&kp TAB           &kp Q               &kp W              &kp E              &kp R              &kp T               &kp DOWN           &kp Y              &kp U               &kp I              &kp O              &kp P                &kp BACKSLASH \
+&kp LSHFT         U_HML(LGUI, A)      U_HML(LALT, S)     U_HSL(LSHFT, D)    U_HML(LCTRL, F)    &kp G               &kp LEFT           &kp H              U_HMR(RCTRL, J)     U_HSR(RSHFT, K)    U_HMR(RALT, L)     U_HMR(RGUI, SQT)     &kp SEMI \
+&kp LCTRL         U_LT(BUTTON, Z)     &kp X              &kp C              &kp V              &kp B               &kp RIGHT          &kp N              &kp M               &kp COMMA          &kp PERIOD         U_LT(BUTTON, SLASH)  &kp RET \
+&kp C_MUTE        &kp LGUI            &kp LALT           U_LT(MEDIA, ESC)   U_LT(NAVI, TAB)    U_LT(MOUSE, SPACE)  &kp RET            U_LT(SYMB, RET)    U_LT(NUMBER, BSPC)  U_LT(FUNC, DEL)   &kp MINUS          &kp EQUAL   
 
 #define COLEMAK_DH_BINDINGS \
-&kp ESC            &kp N1             &kp N2             &kp N3             &kp N4             &kp N5              &kp UP             &kp N6             &kp N7             &kp N8             &kp N9             &kp N0               &kp BACKSPACE \
-&kp TAB            &kp Q              &kp W              &kp F              &kp P              &kp B               &kp DOWN           &kp J              &kp L              &kp U              &kp Y              &kp SQT              &kp BACKSLASH \
-&kp LSHFT          U_HML(LGUI, A)     U_HML(LALT, R)     U_HSL(LSHFT, S)    U_HML(LCTRL, T)    &kp G               &kp LEFT           &kp M              U_HMR(RCTRL, N)    U_HSR(RSHFT, E)    U_HMR(RALT, I)     U_HMR(RGUI, O)       &kp SEMI \
-&kp LCTRL          U_LT(BUTTON, Z)    &kp X              &kp C              &kp D              &kp V               &kp RIGHT          &kp K              &kp H              &kp COMMA          &kp PERIOD         U_LT(BUTTON, SLASH)  &kp RET \
-&kp C_MUTE         &kp LGUI           &kp LALT           U_LT(MEDIA, ESC)   U_LT(NAVI, TAB)    U_LT(MOUSE, SPACE)  &kp RET            U_LT(SYMB, RET)    U_LT(NUMBER, DEL)  U_LT(FUNC, BSPC)   &kp MINUS          &kp EQUAL   
+&kp ESC            &kp N1             &kp N2             &kp N3             &kp N4             &kp N5              &kp UP             &kp N6             &kp N7              &kp N8             &kp N9             &kp N0               &kp BACKSPACE \
+&kp TAB            &kp Q              &kp W              &kp F              &kp P              &kp B               &kp DOWN           &kp J              &kp L               &kp U              &kp Y              &kp SQT              &kp BACKSLASH \
+&kp LSHFT          U_HML(LGUI, A)     U_HML(LALT, R)     U_HSL(LSHFT, S)    U_HML(LCTRL, T)    &kp G               &kp LEFT           &kp M              U_HMR(RCTRL, N)     U_HSR(RSHFT, E)    U_HMR(RALT, I)     U_HMR(RGUI, O)       &kp SEMI \
+&kp LCTRL          U_LT(BUTTON, Z)    &kp X              &kp C              &kp D              &kp V               &kp RIGHT          &kp K              &kp H               &kp COMMA          &kp PERIOD         U_LT(BUTTON, SLASH)  &kp RET \
+&kp C_MUTE         &kp LGUI           &kp LALT           U_LT(MEDIA, ESC)   U_LT(NAVI, TAB)    U_LT(MOUSE, SPACE)  &kp RET            U_LT(SYMB, RET)    U_LT(NUMBER, BSPC)  U_LT(FUNC, DEL)   &kp MINUS          &kp EQUAL   
 
 #define QWERTY_TAP_BINDINGS \
-&kp ESC           &kp N1              &kp N2             &kp N3             &kp N4             &kp N5              &kp UP             &kp N6             &kp N7             &kp N8             &kp N9             &kp N0               &kp BACKSPACE \
-&kp TAB           &kp Q               &kp W              &kp E              &kp R              &kp T               &kp DOWN           &kp Y              &kp U              &kp I              &kp O              &kp P                &kp BACKSLASH \
-&kp LSHFT         &kp A               &kp S              &kp D              &kp F              &kp G               &kp LEFT           &kp H              &kp J              &kp K              &kp L              &kp SQT              &kp SEMI \
-&kp LCTRL         U_LT(BUTTON, Z)     &kp X              &kp C              &kp V              &kp B               &kp RIGHT          &kp N              &kp M              &kp COMMA          &kp PERIOD         U_LT(BUTTON, SLASH)  &kp RET \
-&kp C_MUTE        &kp LGUI            &kp LALT           U_LT(MEDIA, ESC)   U_LT(NAVI, TAB)    U_LT(MOUSE, SPACE)  &kp RET            U_LT(SYMB, RET)    U_LT(NUMBER, DEL)  U_LT(FUNC, BSPC)   &kp MINUS          &kp EQUAL   
+&kp ESC           &kp N1              &kp N2             &kp N3             &kp N4             &kp N5              &kp UP             &kp N6             &kp N7              &kp N8             &kp N9             &kp N0               &kp BACKSPACE \
+&kp TAB           &kp Q               &kp W              &kp E              &kp R              &kp T               &kp DOWN           &kp Y              &kp U               &kp I              &kp O              &kp P                &kp BACKSLASH \
+&kp LSHFT         &kp A               &kp S              &kp D              &kp F              &kp G               &kp LEFT           &kp H              &kp J               &kp K              &kp L              &kp SQT              &kp SEMI \
+&kp LCTRL         U_LT(BUTTON, Z)     &kp X              &kp C              &kp V              &kp B               &kp RIGHT          &kp N              &kp M               &kp COMMA          &kp PERIOD         U_LT(BUTTON, SLASH)  &kp RET \
+&kp C_MUTE        &kp LGUI            &kp LALT           U_LT(MEDIA, ESC)   U_LT(NAVI, TAB)    U_LT(MOUSE, SPACE)  &kp RET            U_LT(SYMB, RET)    U_LT(NUMBER, BSPC)  U_LT(FUNC, DEL)   &kp MINUS          &kp EQUAL   
 
 #define NUMBER_BINDINGS \
 U_NA               U_NA               U_NA               U_NA               U_NA               U_NA               &kp UP_ARROW       U_NA               U_NA               U_NA               U_NA               U_NA               U_NA \
